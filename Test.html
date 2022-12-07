@@ -11,14 +11,13 @@
 
 <script>
   function envFrmHtml(html) {
-const element = document.getElementById("intro");    
-    document.getElementById("demo").innerHTML = 
-      "This page has been deployed in the {{ Env }} environment! " + element.innerHTML;
+const Simple = document.createElement(Simple)
+Simple.innerHTML = html.trim();
+return Simple.content.firstElementChild;
+
 
   }
   
-
-
 
 </script>
 
