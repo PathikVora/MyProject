@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create HTML File</h2>
+
+<p id="intro">Automatically Creating HTML</p>
+<p>This example demonstrates the how to create html file using script </p>
+
+<p id="demo"></p>
+
+<script>
+  function envFrmHtml(html) {
+const element = document.getElementById("intro");    
+    document.getElementById("demo").innerHTML = 
+      "This page has been deployed in the {{ Env }} environment! " + element.innerHTML;
+
+  }
+  
+
+
+
+</script>
+
+</body>
+</html>
